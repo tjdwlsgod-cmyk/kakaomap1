@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카카오 지도</title>
+  <style>
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
+    .root_daum_roughmap { width: 100% !important; height: 100vh !important; }
+    .root_daum_roughmap .wrap_map { height: 100% !important; }
+  </style>
+</head>
+<body>
+
+  <!-- 1. 지도 노드 -->
+  <div id="daumRoughmapContainer1788505234717" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+  <!-- 2. 설치 스크립트 -->
+  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+  <!-- 3. 실행 스크립트 -->
+  <script charset="UTF-8">
+    window.onload = function() {
+      new daum.roughmap.Lander({
+        "timestamp" : "1788505234717",
+        "key" : "u5quqebyz25",
+        "mapWidth" : "100%",
+        "mapHeight" : "100%"
+      }).render();
+    };
+  </script>
+
+</body>
+</html>
